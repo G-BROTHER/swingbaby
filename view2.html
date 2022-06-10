@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swing Baby</title>
+    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="photoIntro">
+            <div class="photoIntro_container">
+                <div class="photoIntro_inner">
+                    <div class="photoIntro_header">
+                        <div class="photoIntro_header_inner">
+                            <div class="year">
+                                <span>2021</span>
+                            </div>
+                            <h2>같이찍은 첫 사진</h2>
+                        </div>
+                    </div>
+                    <div class="photos">
+                        <figure>
+                            <div class="photo_slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin2-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </figure>
+                    </div>
+                    <aside class="photos_intro">
+                        <div class="intro_desc">
+                            사귀기 시작한날 찍었던 사진 굉장히 어색했다..
+                        </div>
+                        <div class="information">
+                            <div class="information_inner">
+                                <dl>
+                                    <dt>장소</dt>
+                                    <dd>부평테마의거리</dd>
+                                </dl>
+                                <dl>
+                                    <dt>날짜</dt>
+                                    <dd>2021-09-24</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        
+      });
+    </script>
+</body>
+</html>
