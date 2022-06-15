@@ -44,6 +44,12 @@ button {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    color: rgb(13, 13, 13);
+}
+.logo span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    font-weight: 600;
 }
 .main {
     display: block;

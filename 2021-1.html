@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swing Baby</title>
+    <link rel="stylesheet" href="view.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Dancing+Script&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header_content">
+                <a href="index.html" class="logo">
+                    <span>Swing Baby</span>
+                </a>
+            </div>
+        </div>
+        <div class="photoIntro">
+            <div class="photoIntro_container">
+                <div class="photoIntro_inner">
+                    <div class="photoIntro_header">
+                        <div class="photoIntro_header_inner">
+                            <div class="year">
+                                <span>2021</span>
+                            </div>
+                            <h2>처음 본 사진</h2>
+                        </div>
+                    </div>
+                    <div class="photos">
+                        <figure>
+                            <div class="photo_slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin1.JPG" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </figure>
+                    </div>
+                    <aside class="photos_intro">
+                        <div class="intro_desc">
+                            수인이 얼굴이 기억이 안났을때, 수인이가 프로필 사진으로 올렸던 사진.
+                            기억은 안났었지만 이뻤었구나 라고 생각했다.
+                        </div>
+                        <div class="information">
+                            <div class="information_inner">
+                                <dl>
+                                    <dt>장소</dt>
+                                    <dd></dd>
+                                </dl>
+                                <dl>
+                                    <dt>날짜</dt>
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+        
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        
+      });
+    </script>
+</body>
+</html>

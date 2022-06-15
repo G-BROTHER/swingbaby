@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swing Baby</title>
     <link rel="stylesheet" href="view.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Dancing+Script&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="wrap">
+        <div class="header">
+            <div class="header_content">
+                <a href="index.html" class="logo">
+                    <span>Swing Baby</span>
+                </a>
+            </div>
+        </div>
+
         <div class="photoIntro">
             <div class="photoIntro_container">
                 <div class="photoIntro_inner">
@@ -65,7 +74,7 @@
 
     <script>
         var swiper = new Swiper(".swiper-container", {
-        cssMode: true,
+        
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

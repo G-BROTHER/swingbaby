@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swing Baby</title>
+    <link rel="stylesheet" href="view.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Dancing+Script&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header_content">
+                <a href="index.html" class="logo">
+                    <span>Swing Baby</span>
+                </a>
+            </div>
+        </div>
+        <div class="photoIntro">
+            <div class="photoIntro_container">
+                <div class="photoIntro_inner">
+                    <div class="photoIntro_header">
+                        <div class="photoIntro_header_inner">
+                            <div class="year">
+                                <span>2022</span>
+                            </div>
+                            <h2>가족여행(?)</h2>
+                        </div>
+                    </div>
+                    <div class="photos">
+                        <figure>
+                            <div class="photo_slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">                                        
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin6.JPG" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin6-1.JPG" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin6-2.JPG" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img_cover">
+                                                <img src="in/suin6-3.JPG" alt="">
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="swiper-pagination"></div>                                    
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </figure>
+                    </div>
+                    <aside class="photos_intro">
+                        <div class="intro_desc">
+                            수인이 친오빠와 친언니네커플 수휘누나와 진수형과 함께하는 1박2일 여행.
+                            바다를 보며 떡볶이와 튀김을 먹고 바다구경도하고 여행의 꽃 바베큐장을 빌려
+                            고기를 구워먹으며 술도 먹고 불멍이라는것도 해봤다. +_+
+                        </div>
+                        <div class="information">
+                            <div class="information_inner">
+                                <dl>
+                                    <dt>장소</dt>
+                                    <dd>을왕리</dd>
+                                </dl>
+                                <dl>
+                                    <dt>날짜</dt>
+                                    <dd>2022-03-12</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+        
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        
+      });
+    </script>
+</body>
+</html>
